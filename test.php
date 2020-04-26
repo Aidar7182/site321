@@ -26,10 +26,10 @@ include('data_base.php');
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="http://internet-shop.tmweb.ru">Все товары</a></li>
-                <li ><a href="http://internet-shop.tmweb.ru/categories">Категории</a>
+                <li class="active"><a href="">Все товары</a></li>
+                <li ><a href="">Категории</a>
                 </li>
-                <li ><a href="http://internet-shop.tmweb.ru/basket">В корзину</a></li>
+                <li ><a href="/korzina.php">В корзину</a></li>
 
                 <li class="dropdown">
                   
@@ -130,10 +130,7 @@ endif;
     </nav>
     </div>
     <!--Библиотека jQuery-->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<!--Готовый скрипт корзины-->
-<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-3e89302d.js"></script>
+    
 
 <!--Стили элементов для корзины-->
 <link href="https://lk.easynetshop.ru/frontend/v5/ens-3e89302d.css" rel="stylesheet">
