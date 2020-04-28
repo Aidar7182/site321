@@ -1,3 +1,8 @@
+<?
+session_start();
+include('data_base.php');
+
+?>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" ></script>
 <!DOCTYPE html>
 <html>
@@ -8,6 +13,7 @@ var priceList = {
     "002" : {"id" : "002", "subid" : {}, "name" : "IPad MINI", "price" : "10500"}
     };
 </script>  
+
 <script>
 var cart;
 var config;
@@ -30,6 +36,29 @@ cart.init("basketwidjet", config);
 </head>
 <body>
 <h1>Корзина</h1>
+<?php 
+        /*$result = $mysql->query("SELECT 'korzina', 'tovar'
+        FROM `korzina`,`tovar`
+        WHERE korzina.tovar_id=tovar.id" );*/
+
+        $res_korzina = $mysql->query("SELECT `tovar_id` FROM `korzina` WHERE `user_id` = '" . $_SESSION['id'] . "'");
+
+
+		while ($korzina = mysqli_fetch_assoc($res_korzina)):
+            
+            $tovar = $mysql->query("SELECT * FROM `tovar` WHERE `id` = '" . $korzina['tovar_id'] . "'");
+
+            $tovar = $tovar->fetch_assoc();
+     ?>
+       
+
+        <p><?=$korzina['tovar_id']; ?></p>
+        <img src="<?=$tovar['image']; ?>" height="250px" class="imga"/> 
+
+		<h3>	<?=$tovar['name']; ?></h3>
+		
+            <p><?=$tovar['price'] . ' COM'; ?></p>    
+        <?php endwhile; ?> 
 <div>
 <span>Корзина: </span>
 <a href="#" onclick="cart.clearBasket()" style="float: right;">Очистить</a>
