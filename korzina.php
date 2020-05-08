@@ -13,7 +13,8 @@ include('data_base.php');
 <script>
 var priceList = {
     "001" : {"id" : "001", "subid" : {}, "name" : "IPhone 5", "price" : "20500"},
-    "002" : {"id" : "002", "subid" : {}, "name" : "IPad MINI", "price" : "10500"}
+    "002" : {"id" : "002", "subid" : {}, "name" : "IPad MINI", "price" : "10500"},
+    "003" : {"id" : "003", "subid" : {}, "name" : "IPod 6", "price" : "6500"}
     };
 </script>  
 
