@@ -71,7 +71,7 @@ cart.init("basketwidjet", config);
 <p><form id="formToSend">
 <input id="fio" type="text" placeholder="Ваши фамилия и имя"  class="" />
 <input id="city" type="text" placeholder="Город"  class=""/>
-<input id="phone" type="text" placeholder="Контактный телефон" class=""/>
+<input id="phone" type="text" placeholder="Контактный телефон номер 2" class=""/>
 <input id="email" type="text" placeholder="Электронная почта" class="" />
 </form>
 <button onclick="cart.sendOrder('formToSend,overflw,bsum');" href="#">Отправить заказ</button>
