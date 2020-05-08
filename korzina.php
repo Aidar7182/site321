@@ -51,7 +51,7 @@ cart.init("basketwidjet", config);
 <p><form id="formToSend">
 <input id="fio" type="text" placeholder="Ваши фамилия и имя"  class="" />
 <input id="city" type="text" placeholder="Город"  class=""/>
-<input id="phone" type="text" placeholder="Контактный телефон" class=""/>
+<input id="phone" type="text" placeholder="Контактный телефон номер" class=""/>
 <input id="email" type="text" placeholder="Домашний адрес" class="" />
 </form>
 <a href="/delete_korzina.php"><button onclick="cart.sendOrder('formToSend,overflw,bsum');"  >Отправить заказ</button></a>
