@@ -110,6 +110,17 @@ while($row=mysqli_fetch_assoc($result)):
             
             
                     </div>
+                    </head> 
+ <body> 
+  <ul>
+   <li>Lorem ipsum dolor sit amet</li>
+   <li>Consectetuer adipiscing elit</li>
+   <li>Sed diem nonummy nibh euismod</li>
+   <li>Tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis 
+    enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis 
+    nisl ut aliquip ex ea commodo consequat.</li>
+  </ul>
+ </body>
                 
                     <?
 $result=$mysql->query("SELECT * FROM `tovar` WHERE `name`='Airpods'");
