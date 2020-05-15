@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+}
+body{
+    margin: 0;
+    background: linear-gradient(45deg,#f6c2eb,#b4ecf0);
+    background-size: 400% 400% ;
+    animation: gradient 10s ease infinite;
+} 
+@keyframes gradient {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+nav {
+    margin-bottom: 15px;
+    background-color:  #000000;
+    opacity: 0.5 ;
+}
+
+
+h2 { 
+    color: #000000;
+}
+.card-author{
+    color:  #000000;
+}
+.card-descr{
+    color:  #000000;
+}
+.card-author{
+    color:  #000000;
+}
+.card-date{
+     color:  #000000;
+}
+.card {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.329);
+    background-size: 200% 200% ;
+    
+}
+.card-img {
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1 ;
+}
+.card-img, .card-author, .card-date, .card-descr{
+    margin-bottom: 10px;
+}
+.card-img_max {
+    height: 500px;
+}
+.card-btn {
+    display: flex;
+
+}
+.card-btn a {
+    margin-right: 10px;
+}
+.sharing {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
