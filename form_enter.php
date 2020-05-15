@@ -49,6 +49,22 @@ include('data_base.php');
                             </div>
         </div>
     </nav>
+ 
+    <style>
+   #block {
+    outline-style: dotted; 
+    outline-width: 3px; 
+    padding: 10px; 
+    border: 3px dotted #000; 
+   }
+  </style>
+ </head> 
+ <body> 
+   <div id="block">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy 
+    nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+   </div>
+ </body>
 
     <div class="py-4">
         <div class="container">
