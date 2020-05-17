@@ -79,7 +79,23 @@
       border-radius: .3rem;
       outline: 0;
     }
+    <style>
+   h1 {
+    border-color: #ccc; 
+    border-style: double;
+    border-bottom-width: 7px; 
+    border-right-width: 7px; 
+    padding-left: 5px; 
+   }
+  </style>
+ </head>
+ <body>
 
+  <h1>Lorem ipsum dolor sit amet</h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem 
+  nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.</p>
+
+ </body>
     @media (min-width: 768px) {
       .modal-content {
         -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
